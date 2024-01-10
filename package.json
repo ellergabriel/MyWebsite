@@ -1,7 +1,11 @@
 {
-    "name": "node-ex-website",
+    "name": "my-website",
     "version": "1.0.0",
-    "description": "",
+    "description": "Personal website to use as a portfolio, based on a tutorial",
+    "repository": {
+		"type": "git",
+		"url": "https://github.com/ellergabriel/MyWebsite"
+	},
     "scripts": {
         "start": "node server.js"
     },
