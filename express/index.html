@@ -3,6 +3,7 @@
 <title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel = "stylesheet" href="../style.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,8 +12,8 @@ body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
 </style>
 <body>
-
-    <!-- Navbar -->
+	<p class = "test-text">Trying to make local css file work.</p>
+    <!-- Navbar --> 
     <div class="w3-top">
     <div class="w3-bar w3-black w3-card">
         <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
@@ -31,21 +32,22 @@ body {font-family: "Lato", sans-serif}
         <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
     </div>
     </div>
-
+   
+	
     <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
     <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
     <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
     <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
     <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
-    </div>
+    </div> 
 
     <!-- Page content -->
     <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
     <!-- Automatic Slideshow Images -->
     <div class="mySlides w3-display-container w3-center">
-        <img src="https://i.kym-cdn.com/photos/images/original/000/234/060/b13.jpg" style="width:100%">
+        <img src="https://i.kym-cdn.com/photos/images/original/000/234/060/b13.jpg" style="width:100%"> <!-- shazbot image -->
         <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
         <h3>Los Angeles</h3>
         <p><b>We had the best time playing at Venice Beach!</b></p>   
@@ -180,7 +182,7 @@ body {font-family: "Lato", sans-serif}
     
     <!-- End Page Content -->
     </div>
-
+	
     <!-- Image of location/map -->
     <img src="https://www.w3schools.com/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
 
@@ -193,6 +195,9 @@ body {font-family: "Lato", sans-serif}
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
     <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    	<div id="test-box">
+	<p>This is a test-box.</p>
+	</div>
     </footer>
 
     <script>
