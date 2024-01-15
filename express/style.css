@@ -1,6 +1,10 @@
-.test-text {
-	color: red;
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
-#test-box{
-	background-color: yellow;
+
+li{
+	display: inline;
 }
+
