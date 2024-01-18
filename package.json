@@ -3,14 +3,17 @@
     "version": "1.0.0",
     "description": "Personal website to use as a portfolio, based on a tutorial",
     "repository": {
-		"type": "git",
-		"url": "https://github.com/ellergabriel/MyWebsite"
-	},
+        "type": "git",
+        "url": "https://github.com/ellergabriel/MyWebsite"
+    },
     "scripts": {
         "start": "node server.js",
         "devStart": "nodemon server.js"
     },
     "dependencies": {
         "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.22"
     }
 }

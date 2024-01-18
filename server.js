@@ -12,6 +12,7 @@ app.use('/', function(req,res){
     res.sendFile(path.join(__dirname+ '/express/index.html'));
     //__dirname : It will resolve to your project folder.
   });
+  //testing nodemon functionality
 const server = http.createServer(app);
 const port = 3000;
 server.listen(port);
