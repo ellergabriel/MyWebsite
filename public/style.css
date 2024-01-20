@@ -24,3 +24,11 @@ li a:hover{
 	background-color: #111;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+#bio-img{
+	float: left;
+}
