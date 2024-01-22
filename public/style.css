@@ -24,11 +24,16 @@ li a:hover{
 	background-color: #111;
 }
 
+.flex-container{
+	display: flex;
+}
+
 img {
-	max-width: 100%;
+	max-width: 50%;
 	height: auto;
 }
 
 #bio-img{
+	display: block;
 	float: left;
 }

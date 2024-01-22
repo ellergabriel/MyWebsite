@@ -3,7 +3,7 @@
 <title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel =stylesheet" href="style.css">
+<link rel ="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,6 +19,7 @@ body {font-family: "Lato", sans-serif}
  		<li><a href="about.asp">About</a></li>
  		<li><a href="portfolio.asp">Portfolio</a></li>
  	</ul>
+ 	
     <!-- Navbar 
     <div class="w3-top">
     <div class="w3-bar w3-black w3-card">
@@ -52,8 +53,13 @@ body {font-family: "Lato", sans-serif}
     <!-- Page content -->
     <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
+    <!-- bio image + text -->
+    <div class = "flex-container">
+    	<img src="https://thumbs.dreamstime.com/z/young-finance-market-analyst-eyeglasses-working-sunny-office-laptop-sitting-wooden-table-businessman-analyze-88939584.jpg?ct=jpeg" id="bio-img">
+    	<span style="font-size: 150%">Testing out bio info next to image</span>
+    </div>
+    <a class="github link" href = "https://github.com/ellergabriel" style="font-size: 150%">GitHub Profile</a>
     <!-- Automatic Slideshow Images -->
-    <img src="https://thumbs.dreamstime.com/z/young-finance-market-analyst-eyeglasses-working-sunny-office-laptop-sitting-wooden-table-businessman-analyze-88939584.jpg?ct=jpeg" id="bio-img">
     <!--  
     <div class="mySlides w3-display-container w3-center">
         <img src="https://i.kym-cdn.com/photos/images/original/000/234/060/b13.jpg" style="width:100%"> <!-- shazbot image 
@@ -77,6 +83,7 @@ body {font-family: "Lato", sans-serif}
         </div>
     </div>
 	-->
+    
     <!-- The Band Section -->
     <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
         <h2 class="w3-wide">THE BAND</h2>
@@ -227,19 +234,19 @@ body {font-family: "Lato", sans-serif}
     // Used to toggle the menu on small screens when clicking on the menu button
     function myFunction() {
     var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else { 
-        x.className = x.className.replace(" w3-show", "");
-    }
+	    if (x.className.indexOf("w3-show") == -1) {
+	        x.className += " w3-show";
+	    } else { 
+	        x.className = x.className.replace(" w3-show", "");
+	    }
     }
 
     // When the user clicks anywhere outside of the modal, close it
     var modal = document.getElementById('ticketModal');
     window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
+	    if (event.target == modal) {
+	        modal.style.display = "none";
+	    }
     }
     </script>
 
