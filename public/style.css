@@ -24,8 +24,24 @@ li a:hover{
 	background-color: #111;
 }
 
-.flex-container{
+.flex-container-bio{
 	display: flex;
+}
+
+.flex-container-portfolio{
+	display: flex;
+	flex-direction: column;
+}
+
+.heading-center{
+	text-align: center;
+	margin-top: 50px;
+	font-family: "Lato", sans-serif;
+}
+
+.text-portfolio{
+	text-align: center;
+	font-size: 150%;
 }
 
 img {
