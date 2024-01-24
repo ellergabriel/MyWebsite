@@ -31,6 +31,10 @@ li a:hover{
 .flex-container-portfolio{
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
+	resize: both;
+	overflow: auto;
+	background-color: #eee;
 }
 
 .heading-center{
@@ -39,9 +43,19 @@ li a:hover{
 	font-family: "Lato", sans-serif;
 }
 
-.text-portfolio{
-	text-align: center;
-	font-size: 150%;
+.heading-portfolio-entry{
+	text-align: left;
+	margin-top: 15px;
+	text-decoration: underline;
+}
+
+.text-portfolio-entry{
+	text-align: left;
+	font-size: 125%;
+}
+
+.img-portfolio-entry{
+	float: left;
 }
 
 img {
