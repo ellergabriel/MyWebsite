@@ -33,6 +33,8 @@ li a:hover{
 	max-width: 800px;
 	height: 350px;
 	position: relative;
+	overflow: hidden;
+	border-radius: 15px;
 }
 
 .slide{
@@ -58,7 +60,7 @@ li a:hover{
 }
 
 .btn:active{
-	tansform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .btn-prev{
@@ -107,8 +109,8 @@ li a:hover{
 
 .text-portfolio-entry{
 	text-align: left;
-	padding-left: 15px;
-	inline-size: 1100px;
+	padding-left: 30px;
+	inline-size: 800px;
 	font-size: 125%;
 }
 

@@ -86,7 +86,7 @@ body {font-family: "Lato", sans-serif}
     										than necessary. In order to further refine the AI, simple Alpha-Beta pruning was used to minimize
     										the number of states generated, saving on both time and memory. </p>
    		</div>
-   		<div class="side">
+   		<div class="slide">
    			<h3 class="heading-portfolio-entry">
    				<a href="https://github.com/ellergabriel/Obstacle-Course" target="_blank" rel="noopener noreferrer">Obstacle Course</a>
    				<h4 class="heading-sub">An obstacle course game developed in Unity game engine</h4>
@@ -238,7 +238,35 @@ body {font-family: "Lato", sans-serif}
     </footer>
 		-->
     <script>
+    const slides = document.querySelectorAll(".slide");
+    var curSlide = 0;
+    var maxSlide = slides.length - 1;
+    const nextSlide = document.querySelector(".btn-next");
+    const prevSlide = document.querySelector(".btn-prev");
+    var index = 0;
+    
+    slides.forEach( (slide, indx) =>{
+    	slide.style.visibility = 'hidden';
+    })
+    
+    nextSlide.addEventListener("click", function() {
+    	curSlide = (curSlide + 1) % maxSlide;
+    	slides.forEach( (slide, indx) =>{
+    		slide.style.visibility = 'visible';
+        	slide.style.transform = `translateX(${indx * 100}%)`;
+        });
+    });
+    
+    prevSlide.addEventListener("click", function() {
+    	curSlide = (curSlide != 0) ? curSlide - 1 : curSlide = maxSlide;
+    	slides.forEach((slide, index) =>{
+    		slide.style.visibility = 'visible';
+    		slide.style.transform = `translateX(${indx * 100}%)`;
+    	});
+    });
+    
     // Automatic Slideshow - change image every 4 seconds
+    /**
     var myIndex = 0;
     carousel();
 
@@ -253,7 +281,7 @@ body {font-family: "Lato", sans-serif}
     x[myIndex-1].style.display = "block";  
     setTimeout(carousel, 4000);    
     }
-
+	
     // Used to toggle the menu on small screens when clicking on the menu button
     function myFunction() {
     var x = document.getElementById("navDemo");
@@ -271,6 +299,7 @@ body {font-family: "Lato", sans-serif}
 	        modal.style.display = "none";
 	    }
     }
+    **/
     </script>
 
     </body>
