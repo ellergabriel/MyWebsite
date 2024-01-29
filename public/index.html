@@ -53,8 +53,8 @@ body {font-family: "Lato", sans-serif}
     <header>
     	<h2 class="heading-center">PORTFOLIO</h2>
     </header>
-    <div class="flex-container-portfolio">
-    	<div>
+    <div class="slider-portfolio">
+    	<div class="slide">
     		<h3 class="heading-portfolio-entry">
     			<a href="https://github.com/ellergabriel/Android-Password-Manager" target="_blank" rel="noopener noreferrer">Android Password Manager</a>
     			<h4 class="heading-sub">A password manager application developed for Android 31+ devices</h4>
@@ -70,7 +70,7 @@ body {font-family: "Lato", sans-serif}
 	    									of the webpage. Moreover, the application can also generate a password for the user of variable
 	    									length in order to ensure a unique, difficult to crack password. </p>
     	</div>
-    	<div>
+    	<div class="slide">
     		<h3 class="heading-portfolio-entry">
     			<a href="https://github.com/ellergabriel/TowersOfHanoi" target="_blank" rel="noopener noreferrer">Three Rings of Hanoi</a>
     			<h4 class="heading-sub">A primitive AI that optimally solves the 
@@ -86,7 +86,7 @@ body {font-family: "Lato", sans-serif}
     										than necessary. In order to further refine the AI, simple Alpha-Beta pruning was used to minimize
     										the number of states generated, saving on both time and memory. </p>
    		</div>
-   		<div>
+   		<div class="side">
    			<h3 class="heading-portfolio-entry">
    				<a href="https://github.com/ellergabriel/Obstacle-Course" target="_blank" rel="noopener noreferrer">Obstacle Course</a>
    				<h4 class="heading-sub">An obstacle course game developed in Unity game engine</h4>
@@ -98,6 +98,9 @@ body {font-family: "Lato", sans-serif}
    											My main takeaway from this project was to always minimize the number of classes and objects within my programs. 
    											</p>
    		</div>
+   		
+   		<button class="btn btn-next">></button>
+   		<button class="btn btn-prev"><</button>
     </div>
     <!-- 
     <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
@@ -120,7 +123,7 @@ body {font-family: "Lato", sans-serif}
         </div>
     </div>
 	-->
-    <!-- The Tour Section -->
+    <!-- The Tour Section
     <div class="w3-black" id="tour">
         <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
         <h2 class="w3-wide w3-center">TOUR DATES</h2>
