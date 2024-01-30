@@ -64,13 +64,13 @@ li a:hover{
 }
 
 .btn-prev{
-	top:45%;
-	left:2%;
+	left:1%;
+	bottom: 10%;
 }
 
 .btn-next{
-	top:45%;
 	right:2%;
+	bottom: 10%;
 }
 
 .flex-container-portfolio{
