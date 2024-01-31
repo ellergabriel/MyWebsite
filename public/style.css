@@ -30,12 +30,12 @@ li a:hover{
 
 .slider{
 	width: 100%;
-	max-width: 1500px;
-	height: 400px;
+	max-width: 1000px;
+	height: 500px;
 	position: relative;
 	overflow: hidden;
 	border: 1px solid black;
-	border-radius: 15px;
+	border-radius: 25px;
 }
 
 .slide{
@@ -56,7 +56,8 @@ li a:hover{
 	z-index: 10px;
 	cursor: pointer;
 	background-color: #fff;
-	font-size: 18px;
+	color: red;
+	font-size: 32px;
 }
 
 .btn:active{
@@ -85,7 +86,7 @@ li a:hover{
 
 .heading-center{
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 25px;
 	font-family: "Lato", sans-serif;
 }
 
