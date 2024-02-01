@@ -2,6 +2,7 @@ const http = require('http');
 const express = require('express');
 const path = require('path');
 const app = express();
+app.set("view engine", "ejs");
 app.use(express.json());
 app.use(express.static(path.join(__dirname + "/public")));
 const server = http.createServer(app);
@@ -16,7 +17,12 @@ app.use(function(req,res){
     //__dirname : It will resolve to your project folder.
   });
 app.get('/', function(req, res) {
-	//res.render('index.html');
+	res.render("index");
 });
-server.listen(port);
-console.debug('Server listening on port ' + port);
+app.get('/test', function(req, res) {
+	res.render("test");
+});
+server.listen(port, function() {
+	console.log("Server is running on port " + port);
+});
+//console.debug('Server listening on port ' + port);

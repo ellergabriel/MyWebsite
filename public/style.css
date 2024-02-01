@@ -31,7 +31,7 @@ li a:hover{
 .slider{
 	width: 100%;
 	max-width: 1000px;
-	height: 500px;
+	height: 400px;
 	position: relative;
 	overflow: hidden;
 	border: 1px solid black;
