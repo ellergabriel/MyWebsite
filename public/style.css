@@ -133,3 +133,8 @@ img {
 	color: red;
 	font-size: 150%;
 }
+
+#page-footer{
+	position: absolute;
+	bottom: 0;
+}

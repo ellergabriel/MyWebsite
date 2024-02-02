@@ -21,8 +21,8 @@ app.use(express.static(path.join(__dirname + '/views')));
 app.get('/', function(req, res) {
 	res.render(path.join(__dirname, '/views/pages/index'));
 });
-app.get('/test', function(req, res) {
-	res.render("test");
+app.get('/about', function(req, res) {
+	res.render('pages/about');
 });
 //server.listen(port, function() {
 	//console.log("Server is running on port " + port);
