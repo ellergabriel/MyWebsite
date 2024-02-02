@@ -24,6 +24,9 @@ app.get('/', function(req, res) {
 app.get('/about', function(req, res) {
 	res.render('pages/about');
 });
+app.get('/portfolio', function(req, res) {
+	res.render('pages/portfolio');
+});
 //server.listen(port, function() {
 	//console.log("Server is running on port " + port);
 //});
