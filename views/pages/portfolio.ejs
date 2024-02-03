@@ -12,11 +12,86 @@
 </header>
 
 <main>
-	<h2 class="heading-center">PORTFOLIO</h2>
-	
+ <header>
+    	<h2 class="heading-center">PORTFOLIO</h2>
+    </header>
+    <div class="slider">
+    	<div class="slide">
+    		<h3 class="heading-portfolio-entry">
+    			<a href="https://github.com/ellergabriel/Android-Password-Manager" target="_blank" rel="noopener noreferrer">Android Password Manager</a>
+    			<h4 class="heading-sub">A password manager application developed for Android 31+ devices</h4>
+    		</h3>
+	    	<p class="text-portfolio-entry">This application was developed as a capstone project for my undergraduate degree.
+	    									I was the majority developer on this project, developing the application-level logic
+	    									and, due our teams conflicting academic schedules, contributed more than 50% of the code 
+	    									in the codebase. <br />
+	    									The password manager leveraged biometric recognition and AES encryption in order to 
+	    									keep the users credentials secure. The credentials are stored in a local SQL database, 
+	    									using the URL of each website as the primary key. If the user visits a recognized URL,
+	    									the application would autofill each login field using field hints parsed from the metadata
+	    									of the webpage. Moreover, the application can also generate a password for the user of variable
+	    									length in order to ensure a unique, difficult to crack password. </p>
+    	</div>
+    	<div class="slide">
+    		<h3 class="heading-portfolio-entry">
+    			<a href="https://github.com/ellergabriel/TowersOfHanoi" target="_blank" rel="noopener noreferrer">Three Rings of Hanoi</a>
+    			<h4 class="heading-sub">A primitive AI that optimally solves the 
+    									<a href="https://en.wikipedia.org/wiki/Tower_of_Hanoi" target="_blank" rel="noopener noreferrer">Three Towers of Hanoi</a>
+				</h4>
+    		</h3>
+    		<p class="text-portfolio-entry">This project was the final for my Intro to AI class. An A* algorithm was implemented to find 
+    										the most time-efficient solution to the Three Towers of Hanoi. The heuristic functions 
+    										determined how close the the goal state using weights for each ring in the game, 
+    										prioritizing the rightmost tower. <br />
+    										Solving the Three Towers of Hanoi was a fascinating and challenging experience. The first version
+    										of this AI was able to solve the puzzle, but only after generating and processing far more states
+    										than necessary. In order to further refine the AI, simple Alpha-Beta pruning was utilized to minimize
+    										the number of states generated, saving on both time and memory. </p>
+   		</div>
+   		<div class="slide">
+   			<h3 class="heading-portfolio-entry">
+   				<a href="https://github.com/ellergabriel/Obstacle-Course" target="_blank" rel="noopener noreferrer">Obstacle Course</a>
+   				<h4 class="heading-sub">An obstacle course game developed in Unity game engine</h4>
+   			</h3>
+   			<p class="text-portfolio-entry">This project was started due to my love of video games, and desire to develop a game that is perfect
+   											to my tastes. While Obstacle Course is not that perfect game, it was an exploration into the Unity game engine
+   											and game design principles.<br />
+   											There is a significant overlap between Object Oritented Principles and best practices of the Unity engine. 
+   											My main takeaway from this project was to always minimize the number of classes and objects within my programs. 
+   											</p>
+   		</div>
+   		
+   		<button class="btn btn-next">></button>
+   		<button class="btn btn-prev"><</button>
+    </div>
 </main>
 
 
 <footer>
 	<%- include('../partials/footer'); %>
 </footer>
+
+    <script>
+    const slides = document.querySelectorAll(".slide");
+    var curSlide = 0;
+    var maxSlide = slides.length;
+    const nextSlide = document.querySelector(".btn-next");
+    const prevSlide = document.querySelector(".btn-prev");
+    
+    slides.forEach( (slide, indx) =>{
+    	slide.style.display = 'none';
+    });
+    slides[curSlide].style.display = 'block';
+    
+    nextSlide.addEventListener("click", function() {
+    	slides[curSlide].style.display = 'none';
+    	curSlide = (curSlide + 1) % maxSlide;
+    	slides[curSlide].style.display = 'block';
+    });
+    
+    prevSlide.addEventListener("click", function() {
+    	slides[curSlide].style.display = 'none';
+    	curSlide = (curSlide != 0) ? curSlide - 1 : curSlide = maxSlide - 1;
+    	slides[curSlide].style.display = 'block';
+    });
+    </script>
