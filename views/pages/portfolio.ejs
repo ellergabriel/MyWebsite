@@ -24,7 +24,7 @@
 	    	<p class="text-portfolio-entry">This application was developed as a capstone project for my undergraduate degree.
 	    									I was the majority developer on this project, developing the application-level logic
 	    									and, due our teams conflicting academic schedules, contributed more than 50% of the code 
-	    									in the codebase. <br />
+	    									in the codebase. <br /><br />
 	    									The password manager leveraged biometric recognition and AES encryption in order to 
 	    									keep the users credentials secure. The credentials are stored in a local SQL database, 
 	    									using the URL of each website as the primary key. If the user visits a recognized URL,
@@ -34,7 +34,7 @@
     	</div>
     	<div class="slide">
     		<h3 class="heading-portfolio-entry">
-    			<a href="https://github.com/ellergabriel/TowersOfHanoi" target="_blank" rel="noopener noreferrer">Three Rings of Hanoi</a>
+    			<a href="https://github.com/ellergabriel/TowersOfHanoi" target="_blank" rel="noopener noreferrer">Towers of Hanoi</a>
     			<h4 class="heading-sub">A primitive AI that optimally solves the 
     									<a href="https://en.wikipedia.org/wiki/Tower_of_Hanoi" target="_blank" rel="noopener noreferrer">Three Towers of Hanoi</a>
 				</h4>
@@ -42,7 +42,7 @@
     		<p class="text-portfolio-entry">This project was the final for my Intro to AI class. An A* algorithm was implemented to find 
     										the most time-efficient solution to the Three Towers of Hanoi. The heuristic functions 
     										determined how close the the goal state using weights for each ring in the game, 
-    										prioritizing the rightmost tower. <br />
+    										prioritizing the rightmost tower. <br /><br />
     										Solving the Three Towers of Hanoi was a fascinating and challenging experience. The first version
     										of this AI was able to solve the puzzle, but only after generating and processing far more states
     										than necessary. In order to further refine the AI, simple Alpha-Beta pruning was utilized to minimize
@@ -55,7 +55,7 @@
    			</h3>
    			<p class="text-portfolio-entry">This project was started due to my love of video games, and desire to develop a game that is perfect
    											to my tastes. While Obstacle Course is not that perfect game, it was an exploration into the Unity game engine
-   											and game design principles.<br />
+   											and game design principles.<br /><br />
    											There is a significant overlap between Object Oritented Principles and best practices of the Unity engine. 
    											My main takeaway from this project was to always minimize the number of classes and objects within my programs. 
    											</p>
@@ -71,7 +71,7 @@
 	<%- include('../partials/footer'); %>
 </footer>
 
-    <script>
+<script>
     const slides = document.querySelectorAll(".slide");
     var curSlide = 0;
     var maxSlide = slides.length;
@@ -94,4 +94,4 @@
     	curSlide = (curSlide != 0) ? curSlide - 1 : curSlide = maxSlide - 1;
     	slides[curSlide].style.display = 'block';
     });
-    </script>
+</script>
