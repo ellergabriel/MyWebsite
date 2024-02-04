@@ -28,6 +28,33 @@ li a:hover{
 	background-color: #111;
 }
 
+.splash{
+	cursor: pointer;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	height: 100%;
+	width: 100%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(0,0,0);
+	transition: all ease-in-out 600ms;
+}
+
+.splash-header{
+	height: 50%;
+	color: white;
+	font-family: consolas;
+	font-size: 30px;
+	display: flex;
+	justify-content: center;
+	align-item: center;
+}
+
+.hidden{
+	transition: 0.5s;
+	display: none;
+}
+
 .flex-container-bio{
 	display: flex;
 }
