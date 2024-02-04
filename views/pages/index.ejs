@@ -12,10 +12,23 @@
 <main>
  <p style="font-size:150%;"> this is the front page</p>
 </main>
+<div class="splash">
+	<h1 class="splash-header">This is my website</h1>
+</div>
 
 <footer>
 	<%- include('../partials/footer'); %>
 </footer>
 
 </body>
+
+<script>
+	var splashScreen = document.querySelector('.splash');
+	splashScreen.addEventListener('click', ()=> {
+		splashScreen.style.opacity = 0;
+		setTimeout( ()=>{
+			splashScreen.classList.add('hidden')
+		}, 610)
+	});
+</script>
 </html>		

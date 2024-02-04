@@ -32,4 +32,4 @@ app.get('/portfolio', function(req, res) {
 //});
 //console.debug('Server listening on port ' + port);
 app.listen(8080);
-console.log('Server is doing ejs stuff');
+console.log('Server is doing ejs stuff on port 8080');
