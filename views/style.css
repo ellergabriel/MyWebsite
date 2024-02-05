@@ -28,6 +28,14 @@ li a:hover{
 	background-color: #111;
 }
 
+.link-project:active{
+	color: blue;
+}
+
+.link-project:visited{
+	color: DarkMagenta;
+}
+
 .splash{
 	cursor: pointer;
 	position: fixed;
@@ -36,7 +44,7 @@ li a:hover{
 	height: 100%;
 	width: 100%;
 	transform: translate(-50%, -50%);
-	background-color: rgba(0,0,0);
+	background-color: DodgerBlue;
 	transition: all ease-in-out 600ms;
 }
 
@@ -47,7 +55,6 @@ li a:hover{
 	font-size: 30px;
 	display: flex;
 	justify-content: center;
-	align-item: center;
 }
 
 .hidden{
