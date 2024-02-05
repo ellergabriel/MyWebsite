@@ -29,7 +29,7 @@ li a:hover{
 }
 
 .link-project:active{
-	color: blue;
+	color: black;
 }
 
 .link-project:visited{
@@ -55,6 +55,8 @@ li a:hover{
 	font-size: 30px;
 	display: flex;
 	justify-content: center;
+	text-align: center;
+	margin: 23%;
 }
 
 .hidden{
