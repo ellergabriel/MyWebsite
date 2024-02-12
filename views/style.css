@@ -70,7 +70,7 @@ li a:hover{
 
 .slider{
 	width: 100%;
-	max-width: 1500px;
+	max-width: 1250px;
 	height: 400px;
 	position: relative;
 	overflow: hidden;
@@ -84,6 +84,7 @@ li a:hover{
 	height: 350px;
 	position: absolute;
 	object-fit: cover;
+	display: flex;
 }
 
 .btn {
@@ -162,7 +163,7 @@ li a:hover{
 }
 
 .img-portfolio-entry{
-	float: left;
+	float: right;
 }
 
 img {
