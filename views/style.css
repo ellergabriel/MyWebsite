@@ -180,3 +180,10 @@ img {
 	color: red;
 	font-size: 150%;
 }
+
+#footer{
+	color: red;
+	position: absolute;
+	bottom: 0;
+	text-align: left;
+}
